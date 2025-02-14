@@ -17,7 +17,8 @@ You can now submit telemetry data to the server by sending a POST request to `ht
 ```json
 {
   "command": "account create", // command name from list of accepted commands
-  "timestamp": "2021-08-01T12:00:00Z" // ISO date string
+  "timestamp": "2021-08-01T12:00:00Z", // ISO date string
+  "version": "1.0.0", // CLI version
 }
 ```
 
