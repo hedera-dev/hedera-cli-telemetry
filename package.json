@@ -1,10 +1,10 @@
 {
   "name": "telemetry-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Telemetry server to capture anonimized data for Hedera CLI",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [
     "telemetry",
@@ -12,6 +12,8 @@
   ],
   "author": "Michiel Mulders",
   "license": "ISC",
+  "private": false,
+  "repository": "https://github.com/hedera-dev/hedera-cli-telemetry",
   "dependencies": {
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
