@@ -11,7 +11,8 @@ const app = express();
 app.use(express.json());
 
 // Initialize Firebase Admin SDK
-const serviceAccount = require('./telemetry-data-hedera-firebase-adminsdk.json');
+const serviceAccount = process.env.FIRESTORE || require('./telemetry-data-hedera-firebase-adminsdk.json');
+
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
