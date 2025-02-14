@@ -127,3 +127,6 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Telemetry server listening on port ${PORT}`);
 });
+
+app.keepAliveTimeout = 120 * 1000;
+app.headersTimeout = 120 * 1000;
